@@ -1,10 +1,10 @@
 {
   "name": "@iome/react-widget",
-  "version": "0.1.0",
+  "version": "0.1.0-beta",
   "description": "A widget compatible for NextJS and ReactJS that connects user to web3 and web2 applications",
   "main": "dist/iome.js",
-  "keywords": [],
-  "author": "",
+  "keywords": ["iome", "widget", "MOI", "web3", "zkp", "nextjs"],
+  "author": "sarvalabs-sai",
   "license": "UNLICENSED",
   "devDependencies": {
     "@types/react": "^18.2.15",
