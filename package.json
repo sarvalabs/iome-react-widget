@@ -1,0 +1,26 @@
+{
+  "name": "@iome/react-widget",
+  "version": "0.1.0",
+  "description": "A widget compatible for NextJS and ReactJS that connects user to web3 and web2 applications",
+  "main": "dist/iome.js",
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "crypto-browserify": "^3.12.0",
+    "process": "^0.11.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "stream-browserify": "^3.0.0"
+  },
+  "dependencies": {
+    "@nuid/zk": "^0.1.2",
+    "axios": "^1.4.0",
+    "bs58": "^5.0.0",
+    "ethereumjs-abi": "^0.6.8",
+    "ethers": "^4.0.46",
+    "web3-utils": "^1.10.0"
+  }
+}
