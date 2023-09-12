@@ -3,6 +3,7 @@
 [connectOnTwitter]: https://twitter.com/iome_ai
 [documentation]: https://dev.iome.ai/docs/widget
 
+[![npm version](https://badge.fury.io/js/@iome%2Freact-widget.svg)](https://badge.fury.io/js/@iome%2Freact-widget)
 [![Chat on Slack](https://img.shields.io/badge/Slack-Dev%20community-blue)][joinSlack]
 [![docs](https://img.shields.io/badge/Widget-Documentation-orange)][documentation]
 [![Follow us on Twitter](https://img.shields.io/badge/Twitter-Follow%20Us-blue?style=social&logo=twitter)][connectOnTwitter]
@@ -54,3 +55,9 @@ The _Utils.enc_ class is created with the intent of simplifying the encoding and
 
 **zk** <br />
 The _Utils.zk_ class is intended to assist in the generation and verification of Zero-Knowledge Proofs (ZK Proofs) that are created during interactions in IOMe.
+
+## Support
+If you need more clarifications, feel free to join our [Slack community][joinSlack]. You can also refer to our [Widget docs][documentation].
+
+## License
+UNLICENSED

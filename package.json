@@ -1,11 +1,14 @@
 {
   "name": "@iome/react-widget",
   "version": "0.1.0-beta",
-  "description": "A widget compatible for NextJS and ReactJS that connects user to web3 and web2 applications",
+  "description": "A widget that is compatible with NextJS and ReactJS development, serving as a bridge connecting users to both web3 and web2 applications.",
   "main": "dist/iome.js",
-  "keywords": ["iome", "widget", "MOI", "web3", "zkp", "nextjs"],
+  "keywords": ["iome", "widget", "MOI", "web3", "zkp", "react-widget", "next-widget"],
   "author": "sarvalabs-sai",
   "license": "UNLICENSED",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
@@ -20,7 +23,14 @@
     "axios": "^1.4.0",
     "bs58": "^5.0.0",
     "ethereumjs-abi": "^0.6.8",
-    "ethers": "^4.0.46",
-    "web3-utils": "^1.10.0"
-  }
+    "ethers": "^4.0.46"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sarvalabs/iome-react-widget"
+  },
+  "bugs": {
+    "url": "https://github.com/sarvalabs/iome-react-widget/issues"
+  },
+  "homepage": "https://github.com/sarvalabs/iome-react-widget#readme"
 }
