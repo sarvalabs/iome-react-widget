@@ -9,13 +9,15 @@
 [![Follow us on Twitter](https://img.shields.io/badge/Twitter-Follow%20Us-blue?style=social&logo=twitter)][connectOnTwitter]
 ## Overview
 
-IOMe widget facilitates a comprehensive assortment of UI components. Alongside, the IOMe library introduces dedicated modules for developers, applications, and users. Furthermore, the Utils library presents an array of utility functions, encompassing a wallet library, encoding and cryptography functions, and an array of other practical utilities. This holistic approach ensures that IOMe optimally caters to the multifaceted needs of your web application.
-To find information about the IOMe widget and its prerequisites, please visit this [link](https://dev.iome.ai/docs/widget).
+The IOMe widget offers an extensive collection of UI components and specialized modules for developers, applications, and users. Additionally, the Utils module provides a wide range of utility functions, including a wallet library, encoding and cryptography tools etc. This comprehensive approach guarantees that IOMe effectively addresses the diverse requirements of your web or mobile application.
 
-This package is designed to work seamlessly with both ReactJS and NextJS frontend frameworks.
+Moreover, this npm package is specifically crafted to seamlessly integrate with both ReactJS and NextJS frontend frameworks.
 
 ## Installation
 > npm install @iome/react-widget
+
+## Pre-requisites
+You need to have `DeveloperID` and `AppSecret` before getting started. Please refer to this [link](https://dev.iome.ai/docs/widget) for more details.
 ## Usage
 ```jsx
 // Import
@@ -45,9 +47,31 @@ useEffect(() => {
 />
 ```
 
-This Connect Component is responsible for managing both _current users of the applications and onboarding of new ones_.
+This Connect Component is responsible for managing both **current users** of the applications and **onboarding of new ones**.
+### App and user modules
+- **App** <br />
+	To initialize the App module, simply use the following code: 
+	```js
+	const iome = new IOMe(DeveloperID, AppSecret)
+	iome.InitDev()
+	iome.InitApp()
+	```
 
-### Utils
+	To learn more about the functions under the app module. Visit [this](https://dev.iome.ai/docs/widget) page.
+
+- **User** <br />
+	To initialize the User module, you must connect the widget to your application as detailed in the [Connect Widget](#connect-widget) section.
+
+	Once a user logs in using their IOMe credentials, the User module will be automatically initialized. This allows you to access any function under it. For instance, to generate a user session token, you can make the following call:
+
+	```js
+	// iome.user.getAuthToken(PkcTokenType, message)
+	iome.user.getAuthToken("SESSION", <timestamp>)
+	```
+
+	Please ensure that the user has successfully logged in before using this function.
+
+### Utils module
 **enc** <br />
 The _Utils.enc_ class is created with the intent of simplifying the encoding and decoding of both general strings like Usernames and Attribute names, as well as specific `IOMe namespaces` like _App names, Account names and Avatar names_.
 - `Utils.enc.mEncode(<string>)`
@@ -60,4 +84,10 @@ The _Utils.zk_ class is intended to assist in the generation and verification of
 If you need more clarifications, feel free to join our [Slack community][joinSlack]. You can also refer to our [Widget docs][documentation].
 
 ## License
-UNLICENSED
+This project is licensed under either of
+- [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0) ([`LICENSE-APACHE`](LICENSE-APACHE))
+- [MIT license](https://opensource.org/licenses/MIT) ([`LICENSE-MIT`](LICENSE-MIT))
+
+at your option.
+
+The [SPDX](https://spdx.dev) license identifier for this project is `MIT` or `Apache-2.0`.
