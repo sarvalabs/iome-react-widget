@@ -17,7 +17,7 @@ Moreover, this npm package is specifically crafted to seamlessly integrate with 
 > npm install @iome/react-widget
 
 ## Pre-requisites
-You need to have `DeveloperID` and `AppSecret` before getting started. Please refer to this [link](https://dev.iome.ai/docs/widget) for more details.
+Before you begin, ensure you have your `DeveloperID` and `AppSecret` ready. You can find instructions on how to obtain them by visiting this [link](https://dev.iome.ai/docs/devportal).
 ## Usage
 ```jsx
 // Import
@@ -47,7 +47,7 @@ useEffect(() => {
 />
 ```
 
-This Connect Component is responsible for managing both **current users** of the applications and **onboarding of new ones**.
+This Connect component is responsible for managing both _**current users**_ of the applications and _**onboarding of new users**_.
 ### App and user modules
 - **App** <br />
 	To initialize the App module, simply use the following code: 
@@ -64,8 +64,10 @@ This Connect Component is responsible for managing both **current users** of the
 
 	Once a user logs in using their IOMe credentials, the User module will be automatically initialized. This allows you to access any function under it. For instance, to generate a user session token, you can make the following call:
 
+	#### Generate User Auth Token
+
 	```js
-	// iome.user.getAuthToken(PkcTokenType, message)
+	// iome.user.getAuthToken(DAT Token Type, message)
 	iome.user.getAuthToken("SESSION", <timestamp>)
 	```
 
