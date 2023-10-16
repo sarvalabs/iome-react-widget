@@ -64,6 +64,9 @@ This Connect component is responsible for managing both _**current users**_ of t
 
 	Once a user logs in using their IOMe credentials, the User module will be automatically initialized. This allows you to access any function under it. For instance, to generate a user session token, you can make the following call:
 
+	#### Fetch user MOI ID aka Participant ID
+  	`iome.user.ParticipantID`
+	 
 	#### Generate User Auth Token
 
 	```js
@@ -71,7 +74,23 @@ This Connect component is responsible for managing both _**current users**_ of t
 	iome.user.getAuthToken("SESSION", <timestamp>)
 	```
 
-	Please ensure that the user has successfully logged in before using this function.
+	#### Sign a message
+	```js
+	const signatureDetails = iome.user.sign("message to be signed");
+	console.log(signatureDetails)
+	/*
+	{
+      message: "i'm getting signed",
+      pubKey: '0x0399d76e4747439fe43e76b2d174ef2f40d81f3f31bb7ccb66e01c5d612a8777f1',
+      shortenAddress: '0x8150C9cba21AdbFd8DEe5102f8311ad5B037AF6e',
+      signature: {
+        algorithm: 'ecdsa_secp256k1',
+        digest: '0xe552649e81c3036372b305e91c5f87cbbb447aa5d9b624027d0afce7fb50fe662f98ecfa8e606fd01b8554510f84df2fa22d477d3f7283054b8e9c3fa9b125761c'
+      }
+    }
+	*/
+	```
+Please ensure that the user has successfully logged in before using above functions.
 
 ### Utils module
 **enc** <br />
