@@ -1,6 +1,6 @@
 {
   "name": "@iome/react-widget",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A widget that is compatible with NextJS and ReactJS development, serving as a bridge connecting IOMe users to digital(web3 and web2) applications.",
   "main": "dist/iome.js",
   "keywords": ["iome", "widget", "MOI", "web3", "zkp", "react-widget", "next-widget", "bridge"],
